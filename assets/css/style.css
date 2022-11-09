@@ -1,0 +1,130 @@
+/* 
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Tổng quan đến chi tiết
+*/
+
+/* 
+1. Vị Trí
+2. Kích Thước
+3. Màu Sắc
+4. Hình dạng
+*/
+
+/* Start button search */
+#header .search-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 21px;
+}
+
+#header .search-icon {
+    color: #fff;
+    line-height: 46.5px;
+}
+
+#header .search-button:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+/* End button search  */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {}
+
+#header {
+    position: fixed;
+    /* bottom: 0; */
+    width: 100%;
+    height: 46px;
+    background-color: black;
+}
+
+#nav {}
+
+#nav>li {
+    display: inline-block;
+}
+
+#nav>li>a {
+    text-transform: uppercase;
+}
+
+#nav,
+.subnav {
+    list-style: none;
+}
+
+#nav li {
+    line-height: 46px;
+    position: relative;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0 24px;
+}
+
+#nav li:hover a {
+    color: #000;
+    background-color: rgb(196, 186, 186);
+}
+
+#nav .subnav {
+    min-width: 160px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    top: 100%;
+    left: 0;
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav .subnav li a {
+    color: #000;
+    background-color: #fff
+}
+
+#nav .subnav li:hover a {
+    color: #000;
+    background-color: rgb(196, 186, 186);
+}
+
+#slider {
+    min-height: 500px;
+    background-color: #fff;
+    /* = 50% giá trị của chiều ngang */
+    padding-top: 50%;
+    /*  */
+    margin-top: 46.5;
+
+
+}
+
+#content {}
+
+#footer {}
